@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
+			os.path.join(BASE_DIR, "plantillas"),
 	],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -88,6 +89,10 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
    
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "public"),
 ]
 
 
